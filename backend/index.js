@@ -22,15 +22,16 @@ app.use(
       "http://localhost:3001",
       "http://localhost:3000",
       "http://localhost:5173",
-      "https://main.d211ktvx4wcqwf.amplifyapp.com",
+      "https://kite-4.onrender.com",
     ],
     credentials: true,
   })
 );
+
 app.use(bodyParser.json());
 app.use(cookieParser());
-
 app.use(express.json());
+
 app.use("/auth", authRoute);
 
 app.get("/allHoldings", async (req, res) => {
