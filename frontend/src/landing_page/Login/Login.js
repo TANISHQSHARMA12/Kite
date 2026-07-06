@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "./Login.css";
 
 const Login = () => {
-  const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -33,7 +32,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/auth/login",
+        "https://kite-2-4iyh.onrender.com/auth/login",
         {
           email,
           password,
@@ -41,14 +40,12 @@ const Login = () => {
         { withCredentials: true }
       );
 
-      // backend sometimes returns { success: true } and sometimes { message }
       if (data?.success) {
         handleSuccess(data.message || "Login successful");
         setTimeout(() => {
-          window.location.href = "http://localhost:3001/";
+          window.location.href = "https://kite-dashboard-5je7.onrender.com/";
         }, 900);
       } else {
-        // fallback: treat any returned message as error
         handleError(data?.message || "Login failed");
       }
     } catch (error) {
@@ -63,8 +60,7 @@ const Login = () => {
         <div
           className="row p-5"
           style={{ width: "80%", textAlign: "center" }}
-        >
-        </div>
+        ></div>
 
         <div className="row flex" style={{ textAlign: "center" }}>
           <div className="col-2"></div>
