@@ -35,7 +35,7 @@ const Signup = () => {
 
     try {
       const { data } = await axios.post(
-        "https://kite-2-4iyh.onrender.com/auth/signup",
+        "https://kite-backend-bs2k.onrender.com/auth/signup",
         {
           ...inputValue,
         },
@@ -46,7 +46,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "https://kite-dashboard-5je7.onrender.com/";
+          window.location.href = "https://kite-dashboard-s1z3.onrender.com/";
         }, 1000);
       } else {
         handleError(message);

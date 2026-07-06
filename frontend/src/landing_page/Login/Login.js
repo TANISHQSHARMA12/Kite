@@ -32,7 +32,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "https://kite-2-4iyh.onrender.com/auth/login",
+https://kite-backend-bs2k.onrender.com/auth/login
         {
           email,
           password,
@@ -43,7 +43,7 @@ const Login = () => {
       if (data?.success) {
         handleSuccess(data.message || "Login successful");
         setTimeout(() => {
-          window.location.href = "https://kite-dashboard-5je7.onrender.com/";
+          window.location.href = "https://kite-dashboard-s1z3.onrender.com/";
         }, 900);
       } else {
         handleError(data?.message || "Login failed");
