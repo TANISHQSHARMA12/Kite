@@ -23,6 +23,8 @@ app.use(
       "http://localhost:3000",
       "http://localhost:5173",
       "https://kite-4.onrender.com",
+      "https://kite-5.onrender.com",
+      "https://kite-backend-uxqz.onrender.com",
       "https://kite-frontend-cmk6.onrender.com",
     ],
     credentials: true,
