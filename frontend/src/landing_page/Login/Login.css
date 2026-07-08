@@ -1,10 +1,10 @@
-/* optional styles placeholder */
+/* optional styles placeholder
 /* ==========================================================================
    Zerodha/Kite Inspired Design Override for Existing Bootstrap Structure
    ========================================================================== */
 
 /* 1. Global Reset & Clean System Typography */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,14 +18,14 @@ body {
 }
 
 /* 2. Main Layout Wrapper */
-.form_container {
+/* .form_container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     padding: 20px;
-}
+} */
 
 /* Centers the inner grid container nicely */
 .container-fluid {
@@ -181,4 +181,4 @@ hr {
         box-shadow: none;
         padding: 20px !important;
     }
-}
+} 
