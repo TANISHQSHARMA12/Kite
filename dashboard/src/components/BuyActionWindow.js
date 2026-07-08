@@ -13,7 +13,7 @@ const BuyActionWindow = ({ uid }) => {
 
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://kite-backend-4cpn.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
